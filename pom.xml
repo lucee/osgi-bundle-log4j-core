@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>log4j-core</artifactId>
-  <version>2.17.0</version>
+  <version>2.17.1</version>
   <name>log4j-core</name>
   <packaging>bundle</packaging>
 
@@ -95,7 +95,7 @@
                  <artifactItem>
                    <groupId>org.apache.logging.log4j</groupId>
                     <artifactId>log4j-core</artifactId>
-                    <version>2.17.0</version>
+                    <version>2.17.1</version>
                    <type>jar</type>
                    <overWrite>false</overWrite>
                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
@@ -118,11 +118,11 @@
             <Bundle-Name>org.lucee.log4j-core</Bundle-Name>
             <Bundle-SymbolicName>org.lucee.log4j-core</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
-            <Export-Package>*,META-INF.services.*</Export-Package>
-            <Require-Bundle>org.lucee.log4j-api;bundle-version=2.17.0</Require-Bundle>
+            <Export-Package>*,META-INF.services.*,META-INF.org.apache.logging.log4j.core.config.plugins.*</Export-Package>
+            <Require-Bundle>org.lucee.log4j-api;bundle-version=2.17.1</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <!-- <Import-Package>*</Import-Package> -->
-            <!-- <DynamicImport-Package>*</DynamicImport-Package> -->
+            <Import-Package>!com.conversantmedia.util.concurrent,!com.fasterxml.jackson.annotation,!com.fasterxml.jackson.core,!com.fasterxml.jackson.core.type,!com.fasterxml.jackson.core.util,!com.fasterxml.jackson.databind,!com.fasterxml.jackson.databind.annotation,!com.fasterxml.jackson.databind.deser.std,!com.fasterxml.jackson.databind.module,!com.fasterxml.jackson.databind.node,!com.fasterxml.jackson.databind.ser,!com.fasterxml.jackson.databind.ser.impl,!com.fasterxml.jackson.databind.ser.std,!com.fasterxml.jackson.dataformat.xml,!com.fasterxml.jackson.dataformat.xml.annotation,!com.fasterxml.jackson.dataformat.xml.util,!com.fasterxml.jackson.dataformat.yaml,!com.lmax.disruptor,!com.lmax.disruptor.dsl,!org.apache.commons.csv,!org.apache.kafka.clients.producer,!org.apache.logging.log4j.util.internal,!org.codehaus.stax2,!org.fusesource.jansi,!org.jctools.queues,!org.osgi.framework.wiring,!org.zeromq,*</Import-Package>
+            <DynamicImport-Package>com.conversantmedia.util.concurrent,com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.dataformat.xml.annotation,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.dataformat.yaml,com.lmax.disruptor,com.lmax.disruptor.dsl,org.apache.commons.csv,org.apache.kafka.clients.producer,org.apache.logging.log4j.util.internal,org.codehaus.stax2,org.fusesource.jansi,org.jctools.queues,org.osgi.framework.wiring,org.zeromq</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
