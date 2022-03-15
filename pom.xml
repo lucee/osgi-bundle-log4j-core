@@ -118,6 +118,7 @@
             <Bundle-Name>org.lucee.log4j-core</Bundle-Name>
             <Bundle-SymbolicName>org.lucee.log4j-core</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
+            <Multi-Release>true</Multi-Release>
             <Export-Package>*,META-INF.services.*,META-INF.org.apache.logging.log4j.core.config.plugins.*</Export-Package>
             <Require-Bundle>org.lucee.log4j-api;bundle-version=2.17.1</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
