@@ -121,9 +121,33 @@
             <Export-Package>*,META-INF.services.*,META-INF.org.apache.logging.log4j.core.config.plugins.*</Export-Package>
             <Require-Bundle>org.lucee.log4j-api;bundle-version=2.17.1</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <Import-Package>!com.conversantmedia.util.concurrent,!com.fasterxml.jackson.annotation,!com.fasterxml.jackson.core,!com.fasterxml.jackson.core.type,!com.fasterxml.jackson.core.util,!com.fasterxml.jackson.databind,!com.fasterxml.jackson.databind.annotation,!com.fasterxml.jackson.databind.deser.std,!com.fasterxml.jackson.databind.module,!com.fasterxml.jackson.databind.node,!com.fasterxml.jackson.databind.ser,!com.fasterxml.jackson.databind.ser.impl,!com.fasterxml.jackson.databind.ser.std,!com.fasterxml.jackson.dataformat.xml,!com.fasterxml.jackson.dataformat.xml.annotation,!com.fasterxml.jackson.dataformat.xml.util,!com.fasterxml.jackson.dataformat.yaml,!com.lmax.disruptor,!com.lmax.disruptor.dsl,!org.apache.commons.csv,!org.apache.kafka.clients.producer,!org.apache.logging.log4j.util.internal,!org.codehaus.stax2,!org.fusesource.jansi,!org.jctools.queues,!org.osgi.framework.wiring,!org.zeromq,*</Import-Package>
+            <Import-Package>!com.conversantmedia.util.concurrent,!com.fasterxml.jackson.annotation,!com.fasterxml.jackson.core,!com.fasterxml.jackson.core.type,!com.fasterxml.jackson.core.util,!com.fasterxml.jackson.databind,!com.fasterxml.jackson.databind.annotation,!com.fasterxml.jackson.databind.deser.std,!com.fasterxml.jackson.databind.module,!com.fasterxml.jackson.databind.node,!com.fasterxml.jackson.databind.ser,!com.fasterxml.jackson.databind.ser.impl,!com.fasterxml.jackson.databind.ser.std,!com.fasterxml.jackson.dataformat.xml,!com.fasterxml.jackson.dataformat.xml.annotation,!com.fasterxml.jackson.dataformat.xml.util,!com.fasterxml.jackson.dataformat.yaml,!com.lmax.disruptor,!com.lmax.disruptor.dsl,!org.apache.commons.csv,!org.apache.kafka.clients.producer,!org.apache.logging.log4j.util.internal,!org.codehaus.stax2,!org.fusesource.jansi,!org.jctools.queues,!org.osgi.framework.wiring,!org.zeromq,org.apache.logging.log4j,*</Import-Package>
             <DynamicImport-Package>com.conversantmedia.util.concurrent,com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.dataformat.xml.annotation,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.dataformat.yaml,com.lmax.disruptor,com.lmax.disruptor.dsl,org.apache.commons.csv,org.apache.kafka.clients.producer,org.apache.logging.log4j.util.internal,org.codehaus.stax2,org.fusesource.jansi,org.jctools.queues,org.osgi.framework.wiring,org.zeromq</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
+            <Implementation-URL>https://logging.apache.org/log4j/2.x/log4j-core/</Implementation-URL>
+						<Specification-Vendor>The Apache Software Foundation</Specification-Vendor>
+						<Log4jReleaseVersionJava7>2.12.4</Log4jReleaseVersionJava7>
+						<Log4jReleaseVersionJava6>2.3.2</Log4jReleaseVersionJava6>
+						<Bundle-DocURL>https://www.apache.org/</Bundle-DocURL>
+						<Built-By>rgoers</Built-By>
+						<X-Compile-Source-JDK>1.8</X-Compile-Source-JDK>
+						<Specification-Version>2.17.2</Specification-Version>
+						<Multi-Release>true</Multi-Release>
+						<Implementation-Vendor-Id>org.apache.logging.log4j</Implementation-Vendor-Id>
+						<Log4jReleaseKey>B3D8E1BA</Log4jReleaseKey>
+						<Implementation-Vendor>The Apache Software Foundation</Implementation-Vendor>
+						<Bnd-LastModified>1645648135199</Bnd-LastModified>
+						<Log4jReleaseManager>Ralph Goers</Log4jReleaseManager>
+						<Build-Jdk>1.8.0_144</Build-Jdk>
+						<X-Compile-Target-JDK>1.8</X-Compile-Target-JDK>
+						<Log4jSigningUserName>rgoers@apache.org</Log4jSigningUserName>
+						<Tool>Bnd-3.5.0.201709291849</Tool>
+						<Implementation-Title>Apache Log4j Core</Implementation-Title>
+						<Bundle-Description>The Apache Log4j Implementation</Bundle-Description>
+						<Automatic-Module-Name>org.apache.logging.log4j.core</Automatic-Module-Name>
+						<Specification-Title>Apache Log4j Core</Specification-Title>
+						<Implementation-Version>2.17.2</Implementation-Version>
+						<Log4jReleaseVersion>2.17.2</Log4jReleaseVersion>
           </instructions>
         </configuration>
         <extensions>true</extensions>
